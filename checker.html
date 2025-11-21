@@ -23,6 +23,7 @@
             <span class="toggle-visibility" onclick="togglePasswordVisibility()">👁️</span>
         </div>
         
+        <!-- Status Bar -->
         <div class="strength-indicator">
             <div id="statusBar" class="bar"></div>
         </div>
@@ -33,14 +34,18 @@
             ⚠️ **Privacy Note:** Your password is never saved, transmitted, or stored. The check is performed locally in your browser.
         </div>
         
+        <!-- Requirements List (Matches the script.js logic) -->
         <ul class="requirements-list">
-            <li id="lengthCheck">Minimum **8 characters**</li>
+            <li id="lengthCheck">Minimum **8 characters** (Required)</li>
+            <li id="lowerCheck">Contains a **Lowercase letter** (a-z)</li>
             <li id="upperCheck">Contains an **Uppercase letter** (A-Z)</li>
             <li id="numberCheck">Contains a **Number** (0-9)</li>
             <li id="symbolCheck">Contains a **Special Symbol** (!@#$...)</li>
+            <li id="bonusCheck">Bonus: **12+ characters** for maximum security</li>
         </ul>
     </div>
 
+    <!-- The external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
